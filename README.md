@@ -193,3 +193,5 @@ If you set
     Q2 = C
 
 you'll get the naming convention, which is often used
+
+_(c) 2017 Ralf Kronemeyer
