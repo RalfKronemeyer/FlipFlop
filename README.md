@@ -53,8 +53,7 @@ __A = B = C = 0 __ (this is valid for t<Tp)
          
 Propagtion delay: __2 * Tp__   
          
-         
-### Truth table
+### Formula         
 
 __C2 = ! (A || D1)__  
     
@@ -63,7 +62,10 @@ __C2 = ! (A || D1)__
 __D2 = ! (B || C1)__  
     
     general:  D(n) = !( B(n) || C(n-1) )
- 
+  
+### Truth table
+  
+
     A  B  C1 D1 | C2 D2 | Status     | distance to stable
     ------------|--------------------
      0  0  0  0 |  1  1 | instable   | oo
