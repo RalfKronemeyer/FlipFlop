@@ -11,7 +11,7 @@ FlipFlop for Software Simulation purposes
          | >=1  |O---- C
     B ---|      |
          |------|
-         
+         n
          A B | C
          ----|--
          0 0 | 1
@@ -19,7 +19,29 @@ FlipFlop for Software Simulation purposes
          1 0 | 0
          1 1 | 0
          
-Switching time: __T__  
-Wire time: __WT__ ( T<__WT__<2T - the time to transfer an Output C to any Input A or B)
+Propagtion delay: __Tp__  
+Signal transmit time: __Ts__ ( Tp<__Ts__<2Tp - the time to transfer an Output C to any Input A or B)
          
-         
+### RS FlipFlop Circuit
+
+
+         |------|
+    A ---|      |
+         | >=1  |O--+-- C
+     +---|      |   |
+     |   |------|   |
+     |              |
+     |____      ____|
+          \    /             
+           \  /                  
+            \/             
+            /\
+           /  \
+     _____/    \_____
+     |              |
+     |              |
+     |   |------|   |
+     +---|      |   |
+         | >=1  |O--+-- C
+    B ---|      |
+         |------|
