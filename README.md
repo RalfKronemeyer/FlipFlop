@@ -119,45 +119,45 @@ Accounting propagation delay:
 
 ### Behaviour of input assignment  
 
-Minimum input assignment duration must be at least 2 * Tp  
+Minimum input assignment duration must be at least 2 * Tp, to get a valid stable storage of A B  
 
     Tp| A B | C D 
     ------------
-    00| 0 0 | 0 0   instable
-    01| 0 0 | 1 1   instable
-    02| 0 0 | 0 0   instable
-    03| 0 0 | 1 1   instable
-    04| 0 0 | 0 0   instable
-    05| 0 0 | 1 1   instable
-    06| 1 0 | 0 0   transition
-    07| 1 0 | 1 0   stable
-    08| 0 0 | 1 0   stable
-    09| 0 0 | 1 0   stable
-    10| 0 0 | 1 0   stable
-    11| 0 0 | 1 0   stable
-    12| 0 0 | 1 0   stable
-    13| 0 0 | 1 0   stable
-    14| 0 1 | 0 0   transition
-    15| 0 1 | 0 1   stable
-    16| 0 0 | 0 1   stable
-    17| 0 0 | 0 1   stable
-    18| 1 1 | 0 0   transition ??
-    19| 1 1 | 0 0   stable
-    20| 0 0 | 1 1   instable
-    21| 0 0 | 0 0   instable
-    22| 0 0 | 1 1   instable
-    23| 0 0 | 0 0   instable
-    24| 1 0 | 1 0   transition
-    25| 0 0 | 1 0   stable
-    26| 0 0 | 1 0   stable
-    27| 0 0 | 1 0   stable
-    28| 0 0 | 1 0   stable
-    29| 0 0 | 1 0   stable
-    30| 0 0 | 1 0   stable
-    31| 0 0 | 1 0   stable
-    32| 0 0 | 1 0   stable
-    33| 0 1 | 0 0   transition
-    34| 0 0 | 1 1   instable
+    00| 0 0 | 0 0 
+    01| 0 0 | 1 1 
+    02| 0 0 | 0 0 
+    03| 0 0 | 1 1 
+    04| 0 0 | 0 0 
+    05| 0 0 | 1 1 
+    06| 1 0 | 0 0 
+    07| 1 0 | 0 1 
+    08| 0 0 | 0 1 
+    09| 0 0 | 0 1 
+    10| 0 0 | 0 1 
+    11| 0 0 | 0 1 
+    12| 0 0 | 0 1 
+    13| 0 0 | 0 1 
+    14| 0 1 | 0 0 
+    15| 0 1 | 1 0 
+    16| 0 0 | 1 0 
+    17| 0 0 | 1 0 
+    18| 1 1 | 0 0 
+    19| 1 1 | 0 0 
+    20| 0 0 | 1 1 
+    21| 0 0 | 0 0 
+    22| 0 0 | 1 1 
+    23| 0 0 | 0 0 
+    24| 1 0 | 0 1 
+    25| 0 0 | 0 1 
+    26| 0 0 | 0 1 
+    27| 0 0 | 0 1 
+    28| 0 0 | 0 1 
+    29| 0 0 | 0 1 
+    30| 0 0 | 0 1 
+    31| 0 0 | 0 1 
+    32| 0 0 | 0 1 
+    33| 0 1 | 0 0 
+    34| 0 0 | 1 1 
     35| 0 0 | 0 0 
     36| 0 0 | 1 1 
     37| 0 0 | 0 0 
@@ -167,37 +167,27 @@ Minimum input assignment duration must be at least 2 * Tp
     41| 0 0 | 0 0 
     42| 0 0 | 1 1 
     43| 0 0 | 0 0 
-    
-Accounting propagation delay:
 
-    Tp| A B | C D 
-    ------------
-    01| 0 0 | 1 1 
-    03| 0 0 | 1 1 
-    05| 0 0 | 1 1 
-    07| 1 0 | 1 0 
-    09| 0 0 | 1 0 
-    11| 0 0 | 1 0 
-    13| 0 0 | 1 0 
-    15| 0 1 | 0 1 
-    17| 0 0 | 0 1 
-    19| 1 1 | 0 0 
-    21| 0 0 | 0 0 
-    23| 0 0 | 0 0 
-    25| 1 0 | 0 0 
-    27| 0 0 | 1 0 
-    29| 0 0 | 1 0 
-    31| 0 0 | 1 0 
-    33| 0 1 | 0 0 
-    35| 0 0 | 0 1 
-    37| 1 1 | 0 0 
     
-    
-    
-    
-    
-    
- _(c) 2017 by Ralf Kronemeyer_  
- 
+A B - Combinations can be described as follows
 
+     A B | Description
+    -------------------
+     0 0 | save
+     1 0 | set
+     0 1 | reset
+     1 1 | instable, if A=0 B=0 follows
+    
+    
+    
 
+Naming convention:
+
+If you set
+
+S = A
+R = B
+Q1 = D
+Q2 = C
+
+you have the naming convention, which is often used
