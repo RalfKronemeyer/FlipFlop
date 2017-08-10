@@ -11,7 +11,7 @@ FlipFlop for Software Simulation purposes
          | >=1  |O---- C
     B ---|      |
          |------|
-         n
+         
          A B | C
          ----|--
          0 0 | 1
@@ -180,5 +180,29 @@ If you set
     Q2 = C
 
 you'll get the naming convention, which is often used
+
+
+# JK FlipFlop
+
+### Truth table
+  
+    J  K  Q1 | Q2 
+    ---------|----
+    0  0  0  |  0  
+    0  0  1  |  1  
+    0  1  0  |  0  
+    0  1  1  |  0  
+    1  0  0  |  1  
+    1  0  1  |  1  
+    1  1  0  |  1  
+    1  1  1  |  0  
+    
+### Formula         
+
+__Q2 = (J && !K) || (J && !Q1) || ( !K && Q1)__  
+    
+__Q2 = !(!(!(!J || K) + !(!J || Q)) || !(K || !Q1))__
+
+    
 
 _(c) 2017 Ralf Kronemeyer_  
