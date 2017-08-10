@@ -158,7 +158,7 @@ Minimum input assignment duration must be at least 2 * Tp, to get a valid stable
     43| 0 0 | 0 0 
 
     
-A B - Combinations can be described as follows
+### Input-Combinations
 
      A B | Description
     -------------------
@@ -170,7 +170,7 @@ A B - Combinations can be described as follows
     
     
 
-Naming convention:
+### Naming convention:
 
 If you set
 
