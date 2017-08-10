@@ -194,4 +194,4 @@ If you set
 
 you'll get the naming convention, which is often used
 
-_(c) 2017 Ralf Kronemeyer
+_(c) 2017 Ralf Kronemeyer_  
