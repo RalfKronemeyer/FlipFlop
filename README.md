@@ -190,4 +190,4 @@ If you set
     Q1 = D
     Q2 = C
 
-you have the naming convention, which is often used
+you'll get the naming convention, which is often used
