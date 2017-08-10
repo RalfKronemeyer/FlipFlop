@@ -106,19 +106,6 @@ A = B = 0
     12| 0 0 | 0 0
     13| 0 0 | 1 1
 
-Accounting propagation delay:
-
-    Tp | A  B  | C  D 
-   -------------------
-     0 | 0  0  | 0  0
-     2 | 0  0  | 0  0
-     4 | 0  0  | 0  0
-     6 | 0  0  | 0  0
-     8 | 0  0  | 0  0
-    10 | 0  0  | 0  0
-    12 | 0  0  | 0  0
-
-
 ### Behaviour of input assignment  
 
 Minimum input assignment duration must be at least 2 * Tp, to get a valid stable storage of A B  
