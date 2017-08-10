@@ -201,7 +201,9 @@ you'll get the naming convention, which is often used
 
 __Q2 = (J && !K) || (J && !Q1) || ( !K && Q1)__  
     
-__Q2 = !(!(!(!J || K) || !(!J || Q)) || !(K || !Q1))__  (Nor-Gatter)
+Nor-Gatter:  
+
+__Q2 = !(!(!(!J || K) || !(!J || Q)) || !(K || !Q1))__  
 
     
 
