@@ -42,6 +42,10 @@ Signal transmit time: __Ts__ ( Tp<__Ts__<2Tp - the time to transfer an Output C 
      |              |
      |   |------|   |
      +---|      |   |
-         | >=1  |O--+-- C
+         | >=1  |O--+-- D
     B ---|      |
          |------|
+         
+         
+         
+         
