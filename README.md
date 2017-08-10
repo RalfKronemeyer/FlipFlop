@@ -185,9 +185,9 @@ Naming convention:
 
 If you set
 
-S = A
-R = B
-Q1 = D
-Q2 = C
+    S = A
+    R = B
+    Q1 = D
+    Q2 = C
 
 you have the naming convention, which is often used
