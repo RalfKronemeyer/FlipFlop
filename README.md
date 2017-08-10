@@ -19,8 +19,13 @@ FlipFlop for Software Simulation purposes
          1 0 | 0
          1 1 | 0
          
+         
 Propagtion delay: __Tp__  
 Signal transmit time: __Ts__ ( Tp<__Ts__<2Tp - the time to transfer an Output C to any Input A or B)
+
+Initialization values for simulation purposes:
+
+__A=B=C=false__ (this is valid for t<Tp)  
          
 ### RS FlipFlop Circuit
 
@@ -58,4 +63,30 @@ __D2 = ! (B || C1)__
     general:  D(n) = !( B(n) || C(n-1) )
  
     A  B  C1 D1 | C2 D2
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
+     0  0  0  0 |  1  1
      0  0  0  0 |  1  1
